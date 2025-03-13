@@ -17,7 +17,7 @@ documents = SimpleDirectoryReader("data").load_data()
 index = VectorStoreIndex.from_documents(documents, embed_model=embed_model)
 query_engine = index.as_query_engine(llm=OpenAI(model="gpt-4o-mini",api_base="https://api.nuwaapi.com/v1"))
 
-print(query_engine.query("What did the author do in college?"))
+# print(query_engine.query("What did the author do in college?"))
 
 # Define a simple calculator tool
 def multiply(a: float, b: float) -> float:

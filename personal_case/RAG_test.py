@@ -7,7 +7,7 @@ import os
 
 # 配置嵌入模型的 api_base
 embed_model = OpenAIEmbedding(
-    # model="ext-embedding-ada-002",
+    model="text-embedding-3-small",
     api_base="https://api.nuwaapi.com/v1"  # 替换为实际的 API base URL
 )
 
